@@ -1,4 +1,5 @@
-.App {
+.App-header,
+.App-footer {
   text-align: center;
 }
 
@@ -10,4 +11,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.character-list {
+  margin: 0 auto;
+  max-width: 50vw;
+  padding: 40px 0;
+}
+
+summary {
+  cursor: pointer;
 }
