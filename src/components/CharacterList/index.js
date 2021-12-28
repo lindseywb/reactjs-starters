@@ -1,14 +1,16 @@
+import Performers from "./Performers";
 
 export default function CharacterList({
 	data,
 }) {
 	return (
 		<>
-      <ul>
-        {data.map((character, index) => (
-          <li key={index}>{character.name}</li>
-        ))}
-      </ul>
+      {data.map((character, index) => (
+        <details key={index}>
+          <summary>{character.name}</summary>
+          <Performers performers={character.performers} />
+        </details>
+      ))}
 		</>
 	);
 }
