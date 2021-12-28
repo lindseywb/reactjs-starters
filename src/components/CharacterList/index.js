@@ -1,7 +1,14 @@
+
 export default function CharacterList({
-  data,
+	data,
 }) {
-  return (
-    `There are ${data.length} characters to display in the CharacterList component`
-  );
+	return (
+		<>
+      <ul>
+        {data.map((character, index) => (
+          <li key={index}>{character.name}</li>
+        ))}
+      </ul>
+		</>
+	);
 }
